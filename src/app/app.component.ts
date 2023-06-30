@@ -41,7 +41,7 @@ export class AppComponent implements AfterViewInit {
     background: {
       // color:'#000'
     },
-    fpsLimit: 120,
+    fpsLimit: 300,
     interactivity: {
       events: {
         onClick: {
@@ -79,23 +79,23 @@ export class AppComponent implements AfterViewInit {
       color: {
         animation: {
           enable:true,
-          speed: 1,
+          speed: 10,
           count:10
         },
         value: "#ffffff",
       },
       links: {
         color: "#fff",
-        distance: 50,
+        distance: 70,
         enable: true,
         opacity: 0.7,
-        width: 2,
+        width: 0.2,
       },
       collisions: {
         enable: true,
       },
       move: {
-        direction: MoveDirection.outside,
+        direction: MoveDirection.none,
         enable: true,
         outModes: {
           default: OutMode.bounce,
@@ -107,21 +107,21 @@ export class AppComponent implements AfterViewInit {
       number: {
         density: {
           enable: true,
-          area: 300,
+          area: 270,
         },
-        value: 200,
+        value: 300,
       },
       
       opacity: {
         animation: {
           enable: true,
           minimumValue: 0,
-          speed: 10,
+          speed: 5,
           sync: false
         },
         random: {
           enable: true,
-          minimumValue: 1
+          minimumValue: 0.5
         },
         value: 1
       },
